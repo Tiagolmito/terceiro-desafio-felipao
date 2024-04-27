@@ -4,8 +4,8 @@ class heroi{
         this.idade = idade 
         this.tipo = tipo 
     }
-    atacar(){
-        let ataque = 
+    atacar(){ 
+        let ataque = ""
         switch(this.tipo){
             case "mago":
                 ataque = "usou magia"
@@ -20,12 +20,10 @@ class heroi{
                 ataque = "usou shuriken"
                 break;
         }
-        console.log(`O ${this.tipo} atacou usando ${this.ataque}`)
+               console.log(`O ${this.tipo} atacou usando ${ataque}`)
     }
 }
 
 
-
-
-let heroi1 = new heroi("Lorde Darius", 30 , "Guerreiro")
+let heroi1 = new heroi("Lorde Darius", 30 , "guerreiro")
 heroi1.atacar()
